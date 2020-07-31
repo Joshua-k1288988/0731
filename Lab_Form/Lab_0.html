@@ -14,46 +14,57 @@
 
 <div class="container">
     <!-- HTML 內容放這邊 -->
-    <form>
-        <div class="form-group">
-            <label for="userNameTextBox">
+    <form method="post" action="http://server2020.epizy.com/echo.php">
+        <div class="form-group row">
+            <label for="userNameTextBox" 
+                class="col-form-label col-2 text-right">
                 <i class="fa fa-user"></i> 帳號:
             </label>
             <input 
                 type="text"
-                id="userrrNameTextBox"
+                id="userNameTextBox"
                 placeholder="輸入帳號或E-mail"
-                class="form-control"
+                class="col-10 form-control"
             />
         </div>
-        <div class="form-group">
-            <label for="userNameTextBox">
-                <i class="fa fa-lock"></i> 密碼:
+        <div class="form-group row">
+            <label for="userNameTextBox"
+            class="col-form-label col-2 text-right">
+                <i class="fa fa-lock "></i> 密碼:
             </label>
             <input 
                 type="password"
                 id="userNameTextBox"
                 placeholder="輸入密碼"
-                class="form-control"
+                class="col-10 form-control"
             />
         </div>
-        <div class="form-group form-check">
-            <label class="form-check-label">
-                <input type="checkbox" class="form-check-input">記住我(下次自動登入)
-            </label>
+
+        <div class="form-group row ">
+            <div class="col-sm-2">&nbsp;</div>
+            <div class="form-check  col-10">
+                <label class="form-check-label">
+                    <input type="checkbox" class="form-check-input">記住我(下次自動登入)
+                </label>
+            </div>
         </div>
-        <button type="button"
-            id="loginButton"
-            class="btn btn-outline-success">
-            <i class="fa fa-check"></i> 登入
+        <div class="form-group row "> 
+            <div class="col-sm-2">&nbsp;</div>
+            <div class="form-check  col-10">
+            <button type="button"
+                id="loginButton"
+                class="btn btn-outline-success">
+                <i class="fa fa-check"></i> 登入
+            </button>
+            <button type="button"
+                id="loginButton"
+                class="btn btn-outline-secondary">
+                <i class="fa fa-remove"></i>取消
         </button>
-        <button type="button"
-            id="loginButton"
-            class="btn btn-outline-secondary">
-            <i class="fa fa-remove"></i>取消
-        </button>
+        </div>
+        
              
-</form>
+    </form>
 
 
 
