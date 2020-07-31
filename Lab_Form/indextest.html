@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+<body>
+    <form  action="http://server2020.epizy.com/echo.php">
+        <label for = "userName">Your name:</label>
+        <input id="userName"   name="userName" type="text">
+        <br>
+        <input type="checkbox" id="autoLogin" name="autoLogin">
+        <label for="autoLogin">Auto Login</label>
+        <br>
+        <input type="date" id = "timmer">
+        <br>
+        <input type="radio" name="city" id="tp" value="2">
+        <label for="tp">Taipei</label>
+        <input type="radio" name="city" id="tc" value="4">
+        <label for="tc">Taichung</label>
+        <input type="radio" name="city"   id="tn" value="6">
+        <label for="tn">Tainan</label>
+        <br>
+        <select id="select" name="CityChange" class="select form-control">
+            <option value="Taipei">Taipei</option>
+            <option value="Taichung">Taichung</option>
+            <option value="Tainan">Tainan</option>
+          </select>
+        <br>
+        <input type="submit" value="OK">
+    </form>
+</body>
+</html>
