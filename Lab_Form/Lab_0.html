@@ -14,7 +14,7 @@
 
 <div class="container">
     <!-- HTML 內容放這邊 -->
-    <form method="post" action="http://server2020.epizy.com/echo.php">
+    <form method="post" action="http://localhost/echo.php">
         <div class="form-group row">
             <label for="userNameTextBox" 
                 class="col-form-label col-2 text-right">
@@ -25,6 +25,7 @@
                 id="userNameTextBox"
                 placeholder="輸入帳號或E-mail"
                 class="col-10 form-control"
+                name="userName"
             />
         </div>
         <div class="form-group row">
@@ -37,6 +38,7 @@
                 id="userNameTextBox"
                 placeholder="輸入密碼"
                 class="col-10 form-control"
+                name="password"
             />
         </div>
 
@@ -44,21 +46,25 @@
             <div class="col-sm-2">&nbsp;</div>
             <div class="form-check  col-10">
                 <label class="form-check-label">
-                    <input type="checkbox" class="form-check-input">記住我(下次自動登入)
+                    <input type="checkbox" class="form-check-input" name="remaber Me">記住我(下次自動登入) 
                 </label>
             </div>
         </div>
         <div class="form-group row "> 
             <div class="col-sm-2">&nbsp;</div>
             <div class="form-check  col-10">
-            <button type="button"
+            <button type="submit"
                 id="loginButton"
-                class="btn btn-outline-success">
+                class="btn btn-outline-success"
+                name="loginOrCancel"
+                value="login">
                 <i class="fa fa-check"></i> 登入
             </button>
-            <button type="button"
+            <button type="submit"
                 id="loginButton"
-                class="btn btn-outline-secondary">
+                class="btn btn-outline-secondary"
+                name="loginOrCancel"
+                value="cancel">
                 <i class="fa fa-remove"></i>取消
         </button>
         </div>
